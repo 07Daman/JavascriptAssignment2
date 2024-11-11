@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #a34747;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Main gallery container */
+#gallery {
+    background-color: #F0F0F0;  
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+/* Hover effect for gallery container */
+#gallery:hover {
+    transform: scale(1.02);
+}
+
+/* Featured image styling */
+#featured-image {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* Hover effect for the featured image */
+#featured-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Caption styling for the featured image */
+figcaption {
+    font-size: 1.4rem;
+    color: #000000;  
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* Thumbnail container styling */
+#thumbnails {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Styling for each list item containing the thumbnail and caption */
+#thumbnails li {
+    text-align: center;
+}
+
+/* Thumbnail images */
+#thumbnails img {
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+/* Active thumbnail styling - removes grayscale for the active image */
+#thumbnails img.active {
+    filter: grayscale(0);
+}
+
+/* Caption styling for each thumbnail */
+#thumbnails figcaption {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Next image button styling */
+#next-button {
+    background-color: #008080;  
+    color: #FFFFFF;  
+    border: none;
+    padding: 15px 30px;  
+    font-size: 1.2rem;
+    font-weight: bold;  
+    cursor: pointer;
+    border-radius: 30px;  
+    margin-top: 20px;
+}
+
+/* Button hover effect */
+#next-button:hover {
+    background-color: #FF7F50;  
+    transform: translateY(-3px);  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    color: #000000;  
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+}
